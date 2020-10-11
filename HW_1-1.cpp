@@ -3,7 +3,9 @@ HW_1-1
 List prime number under 30
 */
 
+#include <cmath>
 #include <iostream>
+
 using namespace std;
 
 int main(){
