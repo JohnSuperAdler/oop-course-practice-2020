@@ -24,6 +24,7 @@ int main(){
             {
                 break;
             }
+
             if (j == static_cast<int>(sqrt(i)))
             {
                 cout << i << " is a prime number.\n";
