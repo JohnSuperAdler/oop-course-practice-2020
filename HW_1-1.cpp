@@ -12,10 +12,12 @@ const int Max = 30;
 const double UpperBound = sqrt(Max);
 
 int main(){
-    cout << "2 is a prime number.\n"; // too small to be dealt in the loop
-    cout << "3 is a prime number.\n"; // too small to be dealt in the loop
     for (int i = 2; i <= Max ; ++i)
     {
+        if (i <= 3) {
+            cout << i << " is a prime number.\n"; // too small to be dealt in the loop
+            continue;
+        }
         for (int j = 2; j <= UpperBound; ++j)
         {
             if (i % j == 0)
