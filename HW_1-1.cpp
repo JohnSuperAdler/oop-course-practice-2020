@@ -9,7 +9,7 @@ List prime number under 30
 using namespace std;
 
 int main(){
-    int d = pow(30, 0.5);  // factor of a number under 30 couldn't be over aquare root of 30.
+    int d = sqrt(30);
     cout << "2 is a prime number.\n"; // too small to be dealt in the loop
     cout << "3 is a prime number.\n"; // too small to be dealt in the loop
     for (int i = 2; i <= 30; ++i)
@@ -20,7 +20,7 @@ int main(){
             {
                 break;
             }
-            if (j == static_cast<int>(pow(i, 0.5)))
+            if (j == static_cast<int>(sqrt(i)))
             {
                 cout << i << " is a prime number.\n";
             }
