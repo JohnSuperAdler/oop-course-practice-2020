@@ -8,13 +8,15 @@ List prime number under 30
 
 using namespace std;
 
+const int Max = 30;
+const double UpperBound = sqrt(Max);
+
 int main(){
-    int d = sqrt(30);
     cout << "2 is a prime number.\n"; // too small to be dealt in the loop
     cout << "3 is a prime number.\n"; // too small to be dealt in the loop
-    for (int i = 2; i <= 30; ++i)
+    for (int i = 2; i <= Max ; ++i)
     {
-        for (int j = 2; j <= d; ++j)
+        for (int j = 2; j <= UpperBound; ++j)
         {
             if (i % j == 0)
             {
